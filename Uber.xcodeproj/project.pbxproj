@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		E89EFECD29FCC0810092F757 /* UberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89EFECC29FCC0810092F757 /* UberApp.swift */; };
-		E89EFECF29FCC0810092F757 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89EFECE29FCC0810092F757 /* ContentView.swift */; };
 		E89EFED129FCC0820092F757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E89EFED029FCC0820092F757 /* Assets.xcassets */; };
 		E89EFED429FCC0820092F757 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E89EFED329FCC0820092F757 /* Preview Assets.xcassets */; };
+		E89EFEE229FCC16E0092F757 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89EFEE129FCC16E0092F757 /* HomeView.swift */; };
+		E89EFEE429FCC1D80092F757 /* UberMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89EFEE329FCC1D80092F757 /* UberMapViewRepresentable.swift */; };
+		E89EFEE629FCC3D20092F757 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89EFEE529FCC3D20092F757 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E89EFEC929FCC0810092F757 /* Uber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89EFECC29FCC0810092F757 /* UberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberApp.swift; sourceTree = "<group>"; };
-		E89EFECE29FCC0810092F757 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E89EFED029FCC0820092F757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E89EFED329FCC0820092F757 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E89EFEE129FCC16E0092F757 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E89EFEE329FCC1D80092F757 /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberMapViewRepresentable.swift; sourceTree = "<group>"; };
+		E89EFEE529FCC3D20092F757 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,11 @@
 		E89EFECB29FCC0810092F757 /* Uber */ = {
 			isa = PBXGroup;
 			children = (
-				E89EFECC29FCC0810092F757 /* UberApp.swift */,
-				E89EFECE29FCC0810092F757 /* ContentView.swift */,
+				E89EFEDE29FCC0B00092F757 /* App */,
+				E89EFEDD29FCC0AE0092F757 /* Core */,
+				E89EFEDC29FCC0AB0092F757 /* Extensions */,
+				E89EFEDB29FCC0A90092F757 /* Managers */,
+				E89EFEDA29FCC0A00092F757 /* Models */,
 				E89EFED029FCC0820092F757 /* Assets.xcassets */,
 				E89EFED229FCC0820092F757 /* Preview Content */,
 			);
@@ -65,6 +72,61 @@
 				E89EFED329FCC0820092F757 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E89EFEDA29FCC0A00092F757 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E89EFEDB29FCC0A90092F757 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E89EFEE529FCC3D20092F757 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E89EFEDC29FCC0AB0092F757 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E89EFEDD29FCC0AE0092F757 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E89EFEE029FCC15B0092F757 /* Views */,
+				E89EFEDF29FCC1410092F757 /* ViewModel */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E89EFEDE29FCC0B00092F757 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E89EFECC29FCC0810092F757 /* UberApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E89EFEDF29FCC1410092F757 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E89EFEE029FCC15B0092F757 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E89EFEE129FCC16E0092F757 /* HomeView.swift */,
+				E89EFEE329FCC1D80092F757 /* UberMapViewRepresentable.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +199,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E89EFECF29FCC0810092F757 /* ContentView.swift in Sources */,
+				E89EFEE629FCC3D20092F757 /* LocationManager.swift in Sources */,
+				E89EFEE229FCC16E0092F757 /* HomeView.swift in Sources */,
+				E89EFEE429FCC1D80092F757 /* UberMapViewRepresentable.swift in Sources */,
 				E89EFECD29FCC0810092F757 /* UberApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +333,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Uber/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to access your location to find you nearby drivers and rides";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +362,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Uber/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to access your location to find you nearby drivers and rides";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
