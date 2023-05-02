@@ -16,6 +16,7 @@ struct LocationSearchActivationView: View {
                 .padding(.horizontal)
             Text("Where to?")
                 .foregroundColor(Color(.darkGray))
+                .cornerRadius(12)
             
             Spacer()
         }
@@ -24,7 +25,9 @@ struct LocationSearchActivationView: View {
             Rectangle()
                 .fill(Color.white)
                 .shadow(color: .black, radius: 6)
+                .cornerRadius(12)
                 )
+        
     }
 }
 
